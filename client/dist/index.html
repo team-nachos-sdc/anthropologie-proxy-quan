@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="./images/icon.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Anthropologie</title>
+  <link rel="stylesheet" type="text/css" href="http://localhost:3003/style.css">
+</head>
+
+<body>
+  <div class="fec-container">
+    <div id='search'></div>
+
+    <div id='product-details'></div>
+
+    <div id='review'></div>
+  </div>
+  <img class="bottom-img" src="./images/pageBottom1.png"></img>
+  <img class="bottom-img" src="./images/pageBottom2.png"></img>
+  <script src='http://localhost:3001/bundle.js'></script>
+  <script src='http://localhost:3003/bundle.js'></script>
+  <script src='http://localhost:3002/bundle.js'></script>
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("full-topbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+
+</html>
